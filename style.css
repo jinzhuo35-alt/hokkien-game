@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    border-radius: 48px;
+    padding: 24px 20px 32px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.game-header h1 {
+    font-size: 1.8rem;
+    color: #2d6a4f;
+    letter-spacing: 1px;
+}
+
+.score-area {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: #f8f9fa;
+    padding: 6px 14px;
+    border-radius: 40px;
+    color: #2d6a4f;
+}
+
+#score {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.question-area {
+    background: #f0f4f0;
+    border-radius: 32px;
+    padding: 32px 20px;
+    margin-bottom: 28px;
+}
+
+.question-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1b4332;
+    margin-bottom: 12px;
+}
+
+.question-hint {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.options-area {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.option-btn {
+    background: #e9ecef;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1b4332;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.option-btn:hover {
+    background: #dee2e6;
+    transform: scale(0.98);
+}
+
+.option-btn.correct-highlight {
+    background: #74c69d;
+    color: white;
+    pointer-events: none;
+}
+
+.option-btn.wrong-highlight {
+    background: #e76f51;
+    color: white;
+    pointer-events: none;
+}
+
+.option-btn.disabled-btn {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.feedback-area {
+    background: #f8f9fa;
+    border-radius: 30px;
+    padding: 14px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    color: #2d6a4f;
+}
+
+.next-btn {
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 0 16px;
+    transition: background 0.2s;
+}
+
+.next-btn:hover {
+    background: #1b4332;
+}
+
+.progress-area {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 12px;
+}
+
+/* 禁用选项点击 */
+.disable-click {
+    pointer-events: none;
+}

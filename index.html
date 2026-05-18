@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>闽知道 - Hokkien学习闯关</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- 头部：标题 + 得分 -->
+        <div class="game-header">
+            <h1>🌾 闽知道</h1>
+            <div class="score-area">
+                得分: <span id="score">0</span>
+            </div>
+        </div>
+
+        <!-- 题目区域 -->
+        <div class="question-area">
+            <div class="question-text" id="questionText">加载中...</div>
+            <div class="question-hint" id="questionHint">请选择正确的Hokkien读音</div>
+        </div>
+
+        <!-- 选项区域（4个按钮） -->
+        <div class="options-area" id="optionsArea">
+            <button class="option-btn" data-index="0">选项1</button>
+            <button class="option-btn" data-index="1">选项2</button>
+            <button class="option-btn" data-index="2">选项3</button>
+            <button class="option-btn" data-index="3">选项4</button>
+        </div>
+
+        <!-- 反馈区域 -->
+        <div class="feedback-area" id="feedbackArea">
+            <span id="feedbackText">👉 点击选项开始闯关</span>
+        </div>
+
+        <!-- 下一题按钮（初始隐藏） -->
+        <button class="next-btn" id="nextBtn" style="display: none;">下一题 →</button>
+
+        <!-- 进度 -->
+        <div class="progress-area">
+            第 <span id="currentQ">1</span> / <span id="totalQ">0</span> 题
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
