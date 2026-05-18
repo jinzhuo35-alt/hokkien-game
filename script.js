@@ -64,9 +64,9 @@ const questions = [
     {
         text: "🚢 “送王船”仪式于哪一年被列入联合国教科文组织非物质文化遗产名录？\nIn which year was 'Sending Off the Royal Boat' inscribed on UNESCO's Intangible Cultural Heritage list?",
         hint: "💡 提示：视频中提到，这不只是对仪式的认可，更是对闽南精神的致敬。\nNot just a ritual recognition, but a tribute to the Hokkien spirit.",
-        options: ["2015", "2016", "2017", "2018"],
-        correct: 1,
-        explanation: "✅ 2016年，送王船被列入联合国教科文组织人类非物质文化遗产名录，这是对闽南人'敬天爱人、悲喜共担'精神的致敬。\nCorrect! In 2016, this ritual was recognized as a UNESCO Intangible Cultural Heritage — a tribute to the Hokkien spirit of 'revering heaven and loving humanity, sharing sorrow and joy together.'"
+        options: ["2018", "2019", "2020", "2021"],
+        correct: 2,
+        explanation: "✅ 2020年，送王船被列入联合国教科文组织人类非物质文化遗产名录，这是对闽南人'敬天爱人、悲喜共担'精神的致敬。\nCorrect! In 2020, this ritual was recognized as a UNESCO Intangible Cultural Heritage — a tribute to the Hokkien spirit of 'revering heaven and loving humanity, sharing sorrow and joy together.'"
     }
 ];
 
